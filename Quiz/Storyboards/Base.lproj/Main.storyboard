@@ -80,12 +80,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84.375" y="3.1690140845070425"/>
+            <point key="canvasLocation" x="105" y="2"/>
         </scene>
         <!--Вопрос №-->
         <scene sceneID="6fu-9s-Imk">
             <objects>
-                <viewController id="vYz-2A-myF" sceneMemberID="viewController">
+                <viewController id="vYz-2A-myF" customClass="QuestionsViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vjm-FN-SBG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -254,17 +254,37 @@
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="RV9-8k-a6m"/>
                     <connections>
+                        <outlet property="multipleStackView" destination="pkn-Md-mMx" id="DM3-UO-KiI"/>
+                        <outlet property="questionLabel" destination="9ZD-s7-25n" id="muj-Lt-tbH"/>
+                        <outlet property="questionProgressView" destination="hke-fq-6mG" id="sCt-XD-0I1"/>
+                        <outlet property="rangedSlider" destination="7G0-zs-pXt" id="TmD-ED-YFY"/>
+                        <outlet property="rangedStackView" destination="gBr-sS-OCy" id="bYD-lf-Ecc"/>
+                        <outlet property="singleStackView" destination="5Lb-cQ-YP3" id="jxE-mm-eW1"/>
+                        <outletCollection property="singleButtons" destination="Sl3-4I-JFa" collectionClass="NSMutableArray" id="DA8-x9-MNu"/>
+                        <outletCollection property="singleButtons" destination="o8H-aw-T6F" collectionClass="NSMutableArray" id="fRW-3l-fp7"/>
+                        <outletCollection property="singleButtons" destination="iws-UE-dHo" collectionClass="NSMutableArray" id="Gow-qa-7QD"/>
+                        <outletCollection property="singleButtons" destination="BnV-SM-TAN" collectionClass="NSMutableArray" id="LUr-WL-0MM"/>
+                        <outletCollection property="multipleLabels" destination="nje-5J-ql1" collectionClass="NSMutableArray" id="ciN-Tt-DvS"/>
+                        <outletCollection property="multipleLabels" destination="w94-mE-dw4" collectionClass="NSMutableArray" id="HB4-jn-lU3"/>
+                        <outletCollection property="multipleLabels" destination="Q2a-1k-FLB" collectionClass="NSMutableArray" id="2aj-ax-FyD"/>
+                        <outletCollection property="multipleLabels" destination="uC3-Ge-ebF" collectionClass="NSMutableArray" id="Dtr-UB-Zqp"/>
+                        <outletCollection property="multipleSwitches" destination="ko4-xf-lu5" collectionClass="NSMutableArray" id="f5p-aw-xF5"/>
+                        <outletCollection property="multipleSwitches" destination="dTs-Bv-O8M" collectionClass="NSMutableArray" id="bLr-xc-Buk"/>
+                        <outletCollection property="multipleSwitches" destination="YoK-jT-8F0" collectionClass="NSMutableArray" id="YaV-pu-z4J"/>
+                        <outletCollection property="multipleSwitches" destination="m5H-pb-1fs" collectionClass="NSMutableArray" id="Mxh-QS-gcq"/>
+                        <outletCollection property="rangedLabels" destination="xMu-vi-1Ap" collectionClass="NSMutableArray" id="NWn-lf-IkH"/>
+                        <outletCollection property="rangedLabels" destination="a9R-8J-05Z" collectionClass="NSMutableArray" id="gr1-Qa-4wS"/>
                         <segue destination="dh2-v4-cl8" kind="show" identifier="showResult" id="0Pi-ZO-f4R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lib-MU-23V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1485" y="2.112676056338028"/>
+            <point key="canvasLocation" x="1791" y="2"/>
         </scene>
         <!--Результат-->
         <scene sceneID="lGR-fa-DlJ">
             <objects>
-                <viewController id="dh2-v4-cl8" sceneMemberID="viewController">
+                <viewController id="dh2-v4-cl8" customClass="ResultViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zhy-Ve-5hw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,7 +320,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fx-II-MhQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2244" y="3"/>
+            <point key="canvasLocation" x="2636" y="2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7JZ-OZ-AI1">
@@ -318,7 +338,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xs7-CF-3Xr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757.5" y="2.112676056338028"/>
+            <point key="canvasLocation" x="958" y="3"/>
         </scene>
     </scenes>
     <resources>
